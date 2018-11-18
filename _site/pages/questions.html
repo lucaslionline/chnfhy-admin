@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>凤凰源 | 题库</title>
+	
+
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan-admin/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan-admin/assets/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan-admin/assets/css/custom.css">
+
+	
+	<script src="/fenghuangyuan-admin/assets/js/chart.js"></script>
+	<script src="/fenghuangyuan-admin/assets/js/dataTool.js"></script>
+</head>
+
+</head>
+
+<body>
+	<header>
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/fenghuangyuan-admin/pages/home.html">
+			<span data-feather="activity"></span>
+			凤凰源信息管理平台
+		</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="搜索" aria-label="Search">
+		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap">
+				<a class="nav-link" href="/fenghuangyuan-admin/">退出</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+	<div class="sidebar-sticky">
+		<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+			商城管理
+		</h6>
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/home.html">
+					<span data-feather="home"></span>
+					商城概况 <span class="sr-only">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/orders.html">
+					<span data-feather="layers"></span>
+					订单管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/items.html">
+					<span data-feather="list"></span>
+					商品管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/coupons.html">
+					<span data-feather="tag"></span>
+					礼券管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/clients.html">
+					<span data-feather="users"></span>
+					客户管理
+				</a>
+			</li>
+		</ul>
+
+		<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+			<span>VIP专享</span>
+			<span class="d-flex align-items-center text-muted" href="#">待开发</span>
+		</h6>
+		<ul class="nav flex-column mb-2">
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					地块认购
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					植物养护
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					信息反馈
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					数据预测
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					客户管理
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>题库</h2>
+</div>
+
+<p><input class="form-control w-100" type="text" placeholder="查询"></p>
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>题目ID</th>
+				<th>题干</th>
+				<th>类型</th>
+				<th>选项</th>
+				<th>使用次数</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>001</td>
+				<td>你进厂以后受到过奖励吗？</td>
+				<td>单选</td>
+				<td>1 有；2 没有；3 不知道</td>
+				<td>6</td>
+				<td>
+					<button class="btn btn-sm btn-primary">查看</button>
+					<button class="btn btn-sm btn-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>002</td>
+				<td>工厂有员工代表吗？</td>
+				<td>单选</td>
+				<td>1 有；2 没有；3 不知道</td>
+				<td>3</td>
+				<td>
+					<button class="btn btn-sm btn-outline-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>003</td>
+				<td>您愿意成为员工代表吗？</td>
+				<td>单选</td>
+				<td>1 愿意；2 不愿意；3 不知道</td>
+				<td>3</td>
+				<td>
+					<button class="btn btn-sm btn-outline-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>004</td>
+				<td>您的出生年份</td>
+				<td>问答</td>
+				<td>/</td>
+				<td>15</td>
+				<td>
+					<button class="btn btn-sm btn-outline-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>005</td>
+				<td>在过去的1年，你对工厂提过改善建议吗？</td>
+				<td>单选</td>
+				<td>1 有；2 没有；3 不知道</td>
+				<td>5</td>
+				<td>
+					<button class="btn btn-sm btn-outline-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+				<hr>
+<footer class="small gray">
+	<p>
+		<span>&copy;</span>
+		<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+		浙江凤凰源农业科技有限公司 版权所有
+		<span class="float-right">Designed by LUCAS</span>
+	</p>
+</footer>
+
+
+<script src="/fenghuangyuan-admin/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/jquery-1.11.3.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/popper.min.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/bootstrap.min.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

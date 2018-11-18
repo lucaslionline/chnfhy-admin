@@ -1,0 +1,126 @@
+---
+layout: default
+title: "订单管理"
+---
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>{{ page.title }}</h2>
+</div>
+
+<p>
+	<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text">
+				<span data-feather="search"></span>
+			</span>
+		</div>
+		<input type="text" class="form-control" id="search" placeholder="查询">
+	</div>
+</p>
+
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th><input type="checkbox"></th>
+				<th>收货人</th>
+				<th>联系电话</th>
+				<th>数量</th>
+				<th>付款金额</th>
+				<th>付款状态</th>
+				<th>付款方式</th>
+				<th>发货状态</th>
+				<th>下单时间</th>
+				<th>订单编号</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>张三</td>
+				<td>137****1234</td>
+				<td>1</td>
+				<td>¥458.00</td>
+				<td><span class="danger">未付款</span></td>
+				<td>积分兑换</td>
+				<td><span class="danger">未发货</span></td>
+				<td>2018-11-12 11:47:59</td>
+				<td>20181112-005</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>李四</td>
+				<td>137****1234</td>
+				<td>1</td>
+				<td>¥898.00</td>
+				<td><span class="danger">未付款</span></td>
+				<td>余额支付</td>
+				<td><span class="danger">未发货</span></td>
+				<td>2018-11-12 10:47:59</td>
+				<td>20181112-004</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>王五</td>
+				<td>137****1234</td>
+				<td>1</td>
+				<td>¥458.00</td>
+				<td><span class="success">已付款</span></td>
+				<td>积分兑换</td>
+				<td><span class="danger">未发货</span></td>
+				<td>2018-11-12 09:47:59</td>
+				<td>20181112-003</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>赵六</td>
+				<td>137****1234</td>
+				<td>1</td>
+				<td>¥898.00</td>
+				<td><span class="success">已付款</span></td>
+				<td>积分兑换</td>
+				<td><span class="success">已发货</span></td>
+				<td>2018-11-12 08:47:59</td>
+				<td>20181112-002</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>孙七</td>
+				<td>137****1234</td>
+				<td>1</td>
+				<td>¥458.00</td>
+				<td><span class="success">已付款</span></td>
+				<td>积分兑换</td>
+				<td><span class="success">已发货</span></td>
+				<td>2018-11-12 07:47:59</td>
+				<td>20181112-001</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

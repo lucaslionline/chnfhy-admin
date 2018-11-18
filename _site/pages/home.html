@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>凤凰源 | 商城概况</title>
+	
+
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan-admin/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan-admin/assets/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan-admin/assets/css/custom.css">
+
+	
+	<script src="/fenghuangyuan-admin/assets/js/chart.js"></script>
+	<script src="/fenghuangyuan-admin/assets/js/dataTool.js"></script>
+</head>
+
+</head>
+
+<body>
+	<header>
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/fenghuangyuan-admin/pages/home.html">
+			<span data-feather="activity"></span>
+			凤凰源信息管理平台
+		</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="搜索" aria-label="Search">
+		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap">
+				<a class="nav-link" href="/fenghuangyuan-admin/">退出</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+	<div class="sidebar-sticky">
+		<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+			商城管理
+		</h6>
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link active" href="/fenghuangyuan-admin/pages/home.html">
+					<span data-feather="home"></span>
+					商城概况 <span class="sr-only">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/orders.html">
+					<span data-feather="layers"></span>
+					订单管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/items.html">
+					<span data-feather="list"></span>
+					商品管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/coupons.html">
+					<span data-feather="tag"></span>
+					礼券管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/fenghuangyuan-admin/pages/clients.html">
+					<span data-feather="users"></span>
+					客户管理
+				</a>
+			</li>
+		</ul>
+
+		<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+			<span>VIP专享</span>
+			<span class="d-flex align-items-center text-muted" href="#">待开发</span>
+		</h6>
+		<ul class="nav flex-column mb-2">
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					地块认购
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					植物养护
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					信息反馈
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					数据预测
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span data-feather="database"></span>
+					客户管理
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+				<!--div class="img-thumbnail cover mt-3" style="background: url(/fenghuangyuan-admin/assets/img/cover2.jpg) center center; background-size: cover;">
+	<div class="cover-logo">
+		<img src="/fenghuangyuan-admin/assets/img/logo.png">
+	</div>
+	<div class="cover-title">
+		<h1>问卷分析</h1>
+		<p style="letter-spacing: 0.5em;">QUESTIONALYSIS</p>
+		<h5>一站式问卷解决方案</h5>
+	</div>
+</div-->
+
+
+<div class="row mt-4 mb-4">
+	<div class="col-3">
+		<div class="icon-nav">
+			<a href="/fenghuangyuan-admin/pages/orders.html">
+				<div class="img-thumbnail center">
+					<h1><span data-feather="truck"></span></h1>
+					<h4>3</h4>
+					<p>待发货订单</p>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="col-3">
+		<div class="icon-nav">
+			<div class="img-thumbnail center bg-light">
+				<h1><span data-feather="layers"></span></h1>
+				<h4>8</h4>
+				<p>今日订单数</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-3">
+		<div class="icon-nav">
+			<div class="img-thumbnail center bg-light">
+				<h1><span data-feather="dollar-sign"></span></h1>
+				<h4>¥ 12,345.67</h4>
+				<p>今日成交金额</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-3">
+		<div class="icon-nav">
+			<div class="img-thumbnail center bg-light">
+				<h1><span data-feather="tag"></span></h1>
+				<h4>105</h4>
+				<p>今日兑换礼券数</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<hr>
+<div class="row mt-4 mb-4">
+	<!-- ============ 项目库 ============= -->
+	<div class="col-8">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#week-orders" role="tab" aria-controls="home" aria-selected="true">7日订单</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#week-dollars" role="tab" aria-controls="profile" aria-selected="false">7日成交额</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#annual-orders" role="tab" aria-controls="contact" aria-selected="false">年度订单</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#annual-dollars" role="tab" aria-controls="contact" aria-selected="false">年度成交量</a>
+			</li>
+		</ul>
+
+
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="week-orders" role="tabpanel" aria-labelledby="home-tab">
+				<canvas id="7Orders" width="100%" height="35"></canvas>
+			</div>
+			<div class="tab-pane fade" id="week-dollars" role="tabpanel" aria-labelledby="profile-tab">
+				<canvas id="7Dollars" width="100%" height="35"></canvas>
+			</div>
+			<div class="tab-pane fade" id="annual-orders" role="tabpanel" aria-labelledby="contact-tab">
+				<canvas id="annualOrders" width="100%" height="35"></canvas>
+			</div>
+			<div class="tab-pane fade" id="annual-dollars" role="tabpanel" aria-labelledby="contact-tab">
+				<canvas id="annualDollars" width="100%" height="35"></canvas>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- ============ 交易数据 ============= -->
+	<div class="col-4">
+		<h6><span data-feather="bar-chart-2"></span> 交易数据</h6>
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<tbody>
+					<tr>
+						<td>总订单数</td>
+						<td>12,345</td>
+					</tr>
+					<tr>
+						<td>总成交数</td>
+						<td>12,300</td>
+					</tr>
+					<tr>
+						<td>总礼券数</td>
+						<td>1,234</td>
+					</tr>
+					<tr>
+						<td>总客户数</td>
+						<td>1,234</td>
+					</tr>
+					<tr>
+						<td>总成交额</td>
+						<td>¥123,456.78</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+var ctx = document.getElementById('7Orders').getContext('2d');
+var chart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: ["11-01", "11-02", "11-03", "11-04", "11-05", "11-06", "11-07"],
+		datasets: [{
+			label: "订单数",
+			borderColor: 'rgba(255,99,132,1)',
+			backgroundColor: 'rgba(255,99,132,0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [30, 29, 32, 39, 45, 50, 52],
+		},
+		],
+	},
+	options: {}
+});
+</script>
+
+
+
+
+
+<script type="text/javascript">
+var ctx = document.getElementById('7Dollars').getContext('2d');
+var chart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: ["11-01", "11-02", "11-03", "11-04", "11-05", "11-06", "11-07"],
+		datasets: [{
+			label: "成交额",
+			borderColor: 'rgba(255,99,132,1)',
+			backgroundColor: 'rgba(255,99,132,0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [2609, 3920, 3754, 3900, 4500, 5023, 5200],
+		},
+		],
+	},
+	options: {}
+});
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+var ctx = document.getElementById('annualOrders').getContext('2d');
+var chart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+		datasets: [{
+			label: "2018",
+			borderColor: 'rgba(255,99,132,1)',
+			backgroundColor: 'rgba(255,99,132,0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [2363, 2392, 2449, 2588, 2600, 2755, 2895, 2957, 2975, 3022, 3044],
+		}, {
+			label: "2017",
+			borderColor: 'rgba(54, 162, 235, 1)',
+			backgroundColor: 'rgba(54, 162, 235, 0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [1937, 1949, 1967, 1926, 2039, 2063, 2147, 2313, 2492, 2511, 2613, 2671],
+		}, {
+			label: "2016",
+			borderColor: 'rgba(255, 206, 86, 1)',
+			backgroundColor: 'rgba(255, 206, 86, 0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [1234, 1379, 1462, 1482, 1698, 1787, 1830, 1869, 1800, 1984, 1907, 1993],
+		},
+		],
+	},
+	options: {}
+});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+var ctx = document.getElementById('annualDollars').getContext('2d');
+var chart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+		datasets: [{
+			label: "2018",
+			borderColor: 'rgba(255,99,132,1)',
+			backgroundColor: 'rgba(255,99,132,0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [23963, 23892, 24749, 25688, 26500, 27455, 28395, 29257, 29175, 30022, 30144],
+		}, {
+			label: "2017",
+			borderColor: 'rgba(54, 162, 235, 1)',
+			backgroundColor: 'rgba(54, 162, 235, 0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [19937, 19849, 19767, 19626, 20539, 20463, 21347, 23213, 24192, 25011, 26113, 26271],
+		}, {
+			label: "2016",
+			borderColor: 'rgba(255, 206, 86, 1)',
+			backgroundColor: 'rgba(255, 206, 86, 0.2)',
+			borderWidth: 2,
+			pointBackgroundColor: 'rgba(255,255,255,1)',
+			data: [12934, 13879, 14762, 14682, 16598, 17487, 18330, 18269, 18100, 19284, 19307, 19493],
+		},
+		],
+	},
+	options: {}
+});
+</script>
+
+				<hr>
+<footer class="small gray">
+	<p>
+		<span>&copy;</span>
+		<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+		浙江凤凰源农业科技有限公司 版权所有
+		<span class="float-right">Designed by LUCAS</span>
+	</p>
+</footer>
+
+
+<script src="/fenghuangyuan-admin/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/jquery-1.11.3.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/popper.min.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/bootstrap.min.js"></script>
+<script src="/fenghuangyuan-admin/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

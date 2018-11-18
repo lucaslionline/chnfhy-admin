@@ -1,0 +1,108 @@
+---
+layout: default
+title: "礼券管理"
+---
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>{{ page.title }}</h2>
+</div>
+
+<p>
+	<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text">
+				<span data-feather="search"></span>
+			</span>
+		</div>
+		<input type="text" class="form-control" id="search" placeholder="查询">
+	</div>
+</p>
+
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th><input type="checkbox"></th>
+				<th>礼券编码</th>
+				<th>礼券密码</th>
+				<th>礼券金额</th>
+				<th>发行日期</th>
+				<th>兑换状态</th>
+				<th>持券客户</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>1234567890</td>
+				<td>******</td>
+				<td>10,000</td>
+				<td>2018-01-01</td>
+				<td><span class="danger">未兑换</span></td>
+				<td>张三</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>1234567890</td>
+				<td>******</td>
+				<td>10,000</td>
+				<td>2018-01-01</td>
+				<td><span class="danger">未兑换</span></td>
+				<td>张三</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>1234567890</td>
+				<td>******</td>
+				<td>10,000</td>
+				<td>2018-01-01</td>
+				<td><span class="success">已兑换</span></td>
+				<td>张三</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>1234567890</td>
+				<td>******</td>
+				<td>10,000</td>
+				<td>2018-01-01</td>
+				<td><span class="success">已兑换</span></td>
+				<td>张三</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>1234567890</td>
+				<td>******</td>
+				<td>10,000</td>
+				<td>2018-01-01</td>
+				<td><span class="success">已兑换</span></td>
+				<td>张三</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
