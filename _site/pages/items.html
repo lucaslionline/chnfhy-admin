@@ -16,6 +16,7 @@
 
 	
 	<script src="/chnfhy-admin/assets/js/chart.js"></script>
+	<script src="/chnfhy-admin/assets/js/custom.js"></script>
 	<script src="/chnfhy-admin/assets/js/dataTool.js"></script>
 </head>
 
@@ -136,7 +137,7 @@
 
 
 <p>
-	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="plus-circle"></span> 新增</button>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('wishlist','fade')")><span data-feather="plus-circle"></span> 新增</button>
 	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="log-out"></span> 导出</button>
 	<button class="btn btn-sm btn-outline-primary">删除</button>
 </p>
@@ -263,6 +264,33 @@
 		</tbody>
 	</table>
 </div>
+
+
+
+
+<!--WISHLIST-->
+<div id="fade" class="overlay-bg"></div>
+
+<div id="wishlist" class="overlay-content">
+	<p>
+		<label>
+			商品名称
+			<input type="text" class="form-control">
+		</label>
+	</p>
+
+	<p>
+		<label>
+			商品描述
+			<input type="text" class="form-control">
+		</label>
+	</p>
+
+	<button class="btn btn-sm btn-primary">确定</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('wishlist','fade')">关闭</button>
+</div>
+
 
 				<hr>
 <footer class="small gray">
