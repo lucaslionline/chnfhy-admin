@@ -32,7 +32,9 @@
 		<input class="form-control form-control-dark w-100" type="text" placeholder="搜索" aria-label="Search">
 		<ul class="navbar-nav px-3">
 			<li class="nav-item text-nowrap">
-				<a class="nav-link" href="/chnfhy-admin/">退出</a>
+				<a class="nav-link mr-2" href="/chnfhy-admin/"><span data-feather="airplay"></span> 界面管理</a>
+
+				<a class="nav-link" href="/chnfhy-admin/"><span data-feather="log-out"></span> 退出</a>
 			</li>
 		</ul>
 	</nav>
@@ -306,10 +308,10 @@
 			<tr>
 				<td>发货状态</td>
 				<td>
-					<label style="margin-right: 2em;">
+					<label style="margin-right: 2em;" class="danger">
 						<input type="radio" name="deliveryStatus" checked> 未发货
 					</label>
-					<label>
+					<label class="success">
 						<input type="radio" name="deliveryStatus"> 已发货
 					</label>
 				</td>
