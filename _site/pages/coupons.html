@@ -74,7 +74,7 @@
 			<li class="nav-item">
 				<a class="nav-link " href="/chnfhy-admin/pages/clients.html">
 					<span data-feather="users"></span>
-					客户管理
+					用户管理
 				</a>
 			</li>
 		</ul>
@@ -136,7 +136,8 @@
 
 
 <p>
-	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="plus-circle"></span> 新增</button>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')"><span data-feather="plus-circle"></span> 新增</button>
+	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="log-in"></span> 批量导入</button>
 	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="log-out"></span> 导出</button>
 	<button class="btn btn-sm btn-outline-primary">删除</button>
 </p>
@@ -153,6 +154,7 @@
 				<th>发行日期</th>
 				<th>兑换状态</th>
 				<th>持券客户</th>
+				<th>兑换时间</th>
 				<th>操作</th>
 			</tr>
 		</thead>
@@ -161,12 +163,12 @@
 				<td><input type="checkbox"></td>
 				<td>1234567890</td>
 				<td>******</td>
-				<td>10,000</td>
+				<td>¥10,000</td>
 				<td>2018-01-01</td>
 				<td><span class="danger">未兑换</span></td>
 				<td>张三</td>
+				<td></td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
@@ -175,12 +177,12 @@
 				<td><input type="checkbox"></td>
 				<td>1234567890</td>
 				<td>******</td>
-				<td>10,000</td>
+				<td>¥10,000</td>
 				<td>2018-01-01</td>
 				<td><span class="danger">未兑换</span></td>
 				<td>张三</td>
+				<td></td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
@@ -189,12 +191,12 @@
 				<td><input type="checkbox"></td>
 				<td>1234567890</td>
 				<td>******</td>
-				<td>10,000</td>
+				<td>¥10,000</td>
 				<td>2018-01-01</td>
 				<td><span class="success">已兑换</span></td>
 				<td>张三</td>
+				<td>2018-11-22</td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
@@ -203,12 +205,12 @@
 				<td><input type="checkbox"></td>
 				<td>1234567890</td>
 				<td>******</td>
-				<td>10,000</td>
+				<td>¥10,000</td>
 				<td>2018-01-01</td>
 				<td><span class="success">已兑换</span></td>
 				<td>张三</td>
+				<td>2018-11-22</td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
@@ -217,17 +219,51 @@
 				<td><input type="checkbox"></td>
 				<td>1234567890</td>
 				<td>******</td>
-				<td>10,000</td>
+				<td>¥10,000</td>
 				<td>2018-01-01</td>
 				<td><span class="success">已兑换</span></td>
 				<td>张三</td>
+				<td>2018-11-22</td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
 		</tbody>
 	</table>
+</div>
+
+
+
+
+
+
+<!--UPPERLAYER-->
+<div id="fade" class="overlay-bg"></div>
+
+<div id="upperlayer" class="overlay-content">
+	<p>
+		<label for="couponNo">礼券编码</label>
+		<input type="text" class="form-control" id="couponNo" placeholder="" required>
+	</p>
+
+	<p>
+		<label for="couponPin">兑换密码</label>
+		<input type="text" class="form-control" id="couponPin" placeholder="" required>
+	</p>
+
+	<p>
+		<label for="couponDollar">礼券金额</label>
+		<input type="text" class="form-control" id="couponDollar" placeholder="" required>
+	</p>
+
+	<p>
+		<label for="couponDate">发行日期</label>
+		<input type="text" class="form-control" id="couponDate" placeholder="" required>
+	</p>
+
+	<button class="btn btn-sm btn-primary">确定</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
 </div>
 
 				<hr>

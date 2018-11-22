@@ -97,7 +97,7 @@
 	left: 10%;
 	border: 1px solid #ccc;
 	position: absolute;
-	top: 10%;
+	top: 100px;
 	z-index: 1002;
 	overflow: auto;
 	margin-bottom: 50px;

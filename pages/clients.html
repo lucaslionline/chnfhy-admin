@@ -30,15 +30,14 @@ title: "客户管理"
 		<thead>
 			<tr>
 				<th><input type="checkbox"></th>
-				<th>收货人</th>
+				<th>用户名</th>
+				<th>用户类型</th>
 				<th>联系电话</th>
-				<th>数量</th>
-				<th>付款金额</th>
-				<th>付款状态</th>
-				<th>付款方式</th>
-				<th>发货状态</th>
-				<th>下单时间</th>
-				<th>订单编号</th>
+				<th>订单数</th>
+				<th>礼券数</th>
+				<th>余额</th>
+				<th>积分</th>
+				<th>消费统计</th>
 				<th>操作</th>
 			</tr>
 		</thead>
@@ -46,31 +45,45 @@ title: "客户管理"
 			<tr>
 				<td><input type="checkbox"></td>
 				<td>张三</td>
+				<td>个人用户</td>
 				<td>137****1234</td>
-				<td>1</td>
-				<td>¥458.00</td>
-				<td><span class="danger">未付款</span></td>
-				<td>积分兑换</td>
-				<td><span class="danger">未发货</span></td>
-				<td>2018-11-12 11:47:59</td>
-				<td>20181112-005</td>
+				<td>12</td>
+				<td>2</td>
+				<td>¥14,746.00</td>
+				<td>376</td>
+				<td>¥1,376.00</td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
 			
 			<tr>
 				<td><input type="checkbox"></td>
-				<td>李四</td>
+				<td>xxx公司</td>
+				<td>企业用户</td>
 				<td>137****1234</td>
-				<td>1</td>
-				<td>¥898.00</td>
-				<td><span class="danger">未付款</span></td>
-				<td>余额支付</td>
-				<td><span class="danger">未发货</span></td>
-				<td>2018-11-12 10:47:59</td>
-				<td>20181112-004</td>
+				<td>12</td>
+				<td>2</td>
+				<td>¥14,746.00</td>
+				<td>376</td>
+				<td>¥1,376.00</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>李四</td>
+				<td>个人用户</td>
+				<td>137****1234</td>
+				<td>12</td>
+				<td>2</td>
+				<td>¥14,746.00</td>
+				<td>376</td>
+				<td>¥1,376.00</td>
 				<td>
 					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
@@ -80,14 +93,29 @@ title: "客户管理"
 			<tr>
 				<td><input type="checkbox"></td>
 				<td>王五</td>
+				<td>个人用户</td>
 				<td>137****1234</td>
-				<td>1</td>
-				<td>¥458.00</td>
-				<td><span class="success">已付款</span></td>
-				<td>积分兑换</td>
-				<td><span class="danger">未发货</span></td>
-				<td>2018-11-12 09:47:59</td>
-				<td>20181112-003</td>
+				<td>12</td>
+				<td>2</td>
+				<td>¥14,746.00</td>
+				<td>376</td>
+				<td>¥1,376.00</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>xxx机构</td>
+				<td>企业用户</td>
+				<td>137****1234</td>
+				<td>12</td>
+				<td>2</td>
+				<td>¥14,746.00</td>
+				<td>376</td>
+				<td>¥1,376.00</td>
 				<td>
 					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
@@ -97,31 +125,13 @@ title: "客户管理"
 			<tr>
 				<td><input type="checkbox"></td>
 				<td>赵六</td>
+				<td>个人用户</td>
 				<td>137****1234</td>
-				<td>1</td>
-				<td>¥898.00</td>
-				<td><span class="success">已付款</span></td>
-				<td>积分兑换</td>
-				<td><span class="success">已发货</span></td>
-				<td>2018-11-12 08:47:59</td>
-				<td>20181112-002</td>
-				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
-					<button class="btn btn-sm btn-outline-primary">删除</button>
-				</td>
-			</tr>
-
-			<tr>
-				<td><input type="checkbox"></td>
-				<td>孙七</td>
-				<td>137****1234</td>
-				<td>1</td>
-				<td>¥458.00</td>
-				<td><span class="success">已付款</span></td>
-				<td>积分兑换</td>
-				<td><span class="success">已发货</span></td>
-				<td>2018-11-12 07:47:59</td>
-				<td>20181112-001</td>
+				<td>12</td>
+				<td>2</td>
+				<td>¥14,746.00</td>
+				<td>376</td>
+				<td>¥1,376.00</td>
 				<td>
 					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">详情</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
@@ -129,4 +139,65 @@ title: "客户管理"
 			</tr>
 		</tbody>
 	</table>
+</div>
+
+
+
+
+
+
+
+
+
+<!--UPPERLAYER-->
+<div id="fade" class="overlay-bg"></div>
+
+<div id="upperlayer" class="overlay-content">
+	<h4>用户详情</h4>
+	<table class="table table-striped">
+		<tbody>
+			<tr>
+				<td>用户名/企业名称</td>
+				<td>张三</td>
+			</tr>
+			<tr>
+				<td>微信号/企业账号</td>
+				<td>zhangsan666</td>
+			</tr>
+			<tr>
+				<td>企业统一社会信用代码</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>登录密码</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>历史订单</td>
+				<td>
+					20181112-001 (¥1,376.00)<br>
+					20181112-002 (¥476.00)<br>
+					20181112-001 (¥2,876.00)<br>
+				</td>
+			</tr>
+			<tr>
+				<td>礼券</td>
+				<td>
+					1234567890<br>
+					0987654321
+				</td>
+			</tr>
+			<tr>
+				<td>收货地址</td>
+				<td>
+					张三 137****1234 北京市xx区xx街xx楼xx室<br>
+					李四 138****1234 上海市xx区xx街xx楼xx室
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button class="btn btn-sm btn-primary">确定</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
 </div>
