@@ -1,0 +1,111 @@
+---
+layout: default
+title: "页面管理"
+---
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>{{ page.title }}</h2>
+</div>
+
+<p>
+	<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text">
+				<span data-feather="search"></span>
+			</span>
+		</div>
+		<input type="text" class="form-control" id="search" placeholder="查询">
+	</div>
+</p>
+
+
+<p>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')")><span data-feather="plus-circle"></span> 新建</button>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer-img','fade')")><span data-feather="image"></span> 轮播图</button>
+	<button class="btn btn-sm btn-outline-primary">删除</button>
+</p>
+
+
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th><input type="checkbox"></th>
+				<th>标题</th>
+				<th>发布日期</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>了解石斛</td>
+				<td>2018-11-23</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">编辑</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td>售后服务</td>
+				<td>2018-11-23</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">编辑</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+
+
+<!--UPPERLAYER-->
+<div id="fade" class="overlay-bg"></div>
+
+<div id="upperlayer" class="overlay-content">
+	<p>
+		<label for="itemName">标题</label>
+		<input type="text" class="form-control" id="itemName" placeholder="" required>
+	</p>
+
+	<p>
+		<label for="itemDeta">正文</label>
+		<textarea class="form-control" id="itemDeta" rows="8"></textarea>
+	</p>
+
+
+	<button class="btn btn-sm btn-primary">发布</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
+</div>
+
+
+
+<div id="upperlayer-img" class="overlay-content">
+	<p class="imgShow">
+		<img class="img-thumbnail" src="{{ site.baseurl }}/assets/img/slide1.jpg">
+		<img class="img-thumbnail" src="{{ site.baseurl }}/assets/img/slide2.jpg">
+		<img class="img-thumbnail" src="{{ site.baseurl }}/assets/img/slide3.jpg">
+		<img class="img-thumbnail" src="{{ site.baseurl }}/assets/img/slide4.jpg">
+	</p>
+
+	<p>
+		<label for="itemName">选择图片</label>
+		<input type="file" class="form-control" id="itemName" placeholder="" required>
+	</p>
+
+
+
+	<button class="btn btn-sm btn-primary">发布</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer-img','fade')">关闭</button>
+</div>
