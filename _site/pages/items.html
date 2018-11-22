@@ -137,7 +137,7 @@
 
 
 <p>
-	<button class="btn btn-sm btn-primary" onclick="ShowDiv('wishlist','fade')")><span data-feather="plus-circle"></span> 新增</button>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')")><span data-feather="plus-circle"></span> 新增</button>
 	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="log-out"></span> 导出</button>
 	<button class="btn btn-sm btn-outline-primary">删除</button>
 </p>
@@ -172,7 +172,7 @@
 				<td>2018-11-01 12:00:00</td>
 				<td>fhy123456</td>
 				<td>
-					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'">修改</button>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">修改</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
@@ -268,27 +268,67 @@
 
 
 
-<!--WISHLIST-->
+<!--UPPERLAYER-->
 <div id="fade" class="overlay-bg"></div>
 
-<div id="wishlist" class="overlay-content">
+<div id="upperlayer" class="overlay-content">
 	<p>
-		<label>
-			商品名称
-			<input type="text" class="form-control">
-		</label>
+		<label for="itemName">商品名称</label>
+		<input type="text" class="form-control" id="itemName" placeholder="" required>
 	</p>
 
 	<p>
-		<label>
-			商品描述
-			<input type="text" class="form-control">
-		</label>
+		<label for="itemPics">商品图片</label>
+		<input type="file" class="form-control" id="itemPics" placeholder="" required>
+	</p>
+
+	<p>
+		<div class="row">
+			<div class="col-6">
+				<label for="itemDisc">售价</label>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">¥</span>
+					</div>
+					<input type="text" class="form-control" id="itemDisc" placeholder="">
+				</div>
+			</div>
+
+			<div class="col-6">
+				<label for="itemOrig">原价</label>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">¥</span>
+					</div>
+					<input type="text" class="form-control" id="itemOrig" placeholder="">
+				</div>
+			</div>
+		</div>
+	</p>
+
+	<p>
+		<label for="itemDesc">商品描述</label>
+		<textarea class="form-control" id="itemDesc" rows="2"></textarea>
+	</p>
+
+	<p>
+		<label for="itemDeta">商品详情</label>
+		<textarea class="form-control" id="itemDeta" rows="4"></textarea>
+	</p>
+
+	<p>
+		<label for="itemSpec">规格参数</label>
+		<textarea class="form-control" id="itemSpec" rows="4"></textarea>
+	</p>
+
+	<p>
+		<label for="itemPack">包装售后</label>
+		<textarea class="form-control" id="itemPack" rows="4"></textarea>
 	</p>
 
 	<button class="btn btn-sm btn-primary">确定</button>
 
-	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('wishlist','fade')">关闭</button>
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
 </div>
 
 
