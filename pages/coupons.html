@@ -126,26 +126,42 @@ title: "礼券管理"
 
 <div id="upperlayer" class="overlay-content">
 	<p>
-		<label for="couponNo">礼券编码</label>
-		<input type="text" class="form-control" id="couponNo" placeholder="" required>
+		<label for="couponNo">礼券编码 <span class="text-muted">(如：FHY201901BJ00001)</span></label>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">
+					FHY
+				</span>
+			</div>
+			<input type="text" class="form-control" id="search" placeholder="前缀1（发行年月）">
+			<input type="text" class="form-control" id="search" placeholder="前缀2（投放城市）">
+			<div class="input-group-append">
+				<span class="input-group-text">
+					xxxxx
+				</span>
+			</div>
+		</div>
+		
 	</p>
 
 	<p>
-		<label for="couponPin">兑换密码</label>
+		<label for="couponPin">礼券数量</label>
 		<input type="text" class="form-control" id="couponPin" placeholder="" required>
 	</p>
 
 	<p>
 		<label for="couponDollar">礼券金额</label>
-		<input type="text" class="form-control" id="couponDollar" placeholder="" required>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">
+					¥
+				</span>
+			</div>
+			<input type="text" class="form-control" id="search" placeholder="10,000">
+		</div>
 	</p>
 
-	<p>
-		<label for="couponDate">发行日期</label>
-		<input type="text" class="form-control" id="couponDate" placeholder="" required>
-	</p>
+	<button class="btn btn-sm btn-primary">生成</button>
 
-	<button class="btn btn-sm btn-primary">确定</button>
-
-	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">下载</button>
 </div>
