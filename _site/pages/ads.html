@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 
-	<title>凤凰源 | 礼券管理</title>
+	<title>凤凰源 | 活动管理</title>
 	
 
 	<link rel="stylesheet" type="text/css" href="/chnfhy-admin/assets/css/bootstrap.css">
@@ -67,7 +67,7 @@
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link active" href="/chnfhy-admin/pages/coupons.html">
+				<a class="nav-link " href="/chnfhy-admin/pages/coupons.html">
 					<span data-feather="tag"></span>
 					礼券管理
 				</a>
@@ -79,7 +79,7 @@
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link " href="/chnfhy-admin/pages/ads.html">
+				<a class="nav-link active" href="/chnfhy-admin/pages/ads.html">
 					<span data-feather="tag"></span>
 					活动管理
 				</a>
@@ -127,8 +127,9 @@
 
 			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-	<h2>礼券管理</h2>
+	<h2>活动管理</h2>
 </div>
+
 
 <p>
 	<div class="input-group">
@@ -143,95 +144,47 @@
 
 
 <p>
-	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')"><span data-feather="plus-circle"></span> 新增</button>
-	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="log-in"></span> 批量导入</button>
-	<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='#'"><span data-feather="log-out"></span> 导出</button>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')")><span data-feather="plus-circle"></span> 新增</button>
 	<button class="btn btn-sm btn-outline-primary">删除</button>
 </p>
-
 
 <div class="table-responsive">
 	<table class="table table-striped">
 		<thead>
 			<tr>
 				<th><input type="checkbox"></th>
-				<th>礼券编码</th>
-				<th>礼券密码</th>
-				<th>礼券金额</th>
-				<th>发行日期</th>
-				<th>兑换状态</th>
-				<th>持券客户</th>
-				<th>兑换时间</th>
+				<th>海报</th>
+				<th>活动名称</th>
+				<th>链接地址</th>
+				<th>状态</th>
 				<th>操作</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><input type="checkbox"></td>
-				<td>1234567890</td>
-				<td>******</td>
-				<td>¥10,000</td>
-				<td>2018-01-01</td>
-				<td><span class="danger">未兑换</span></td>
-				<td>张三</td>
-				<td></td>
+				<td><img class="img-thumbnail item-thumbnail" src="/chnfhy-admin/assets/img/ad1.jpg"></td>
+				<td>圣诞促销</td>
+				<td>https://www.baidu.com</td>
 				<td>
-					<button class="btn btn-sm btn-outline-primary">删除</button>
+					<label><input type="checkbox" name="on"> 启用</label>
 				</td>
-			</tr>
-			
-			<tr>
-				<td><input type="checkbox"></td>
-				<td>1234567890</td>
-				<td>******</td>
-				<td>¥10,000</td>
-				<td>2018-01-01</td>
-				<td><span class="danger">未兑换</span></td>
-				<td>张三</td>
-				<td></td>
 				<td>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">编辑</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
 
 			<tr>
 				<td><input type="checkbox"></td>
-				<td>1234567890</td>
-				<td>******</td>
-				<td>¥10,000</td>
-				<td>2018-01-01</td>
-				<td><span class="success">已兑换</span></td>
-				<td>张三</td>
-				<td>2018-11-22</td>
+				<td><img class="img-thumbnail item-thumbnail" src="/chnfhy-admin/assets/img/ad2.jpg"></td>
+				<td>新年促销</td>
+				<td>https://www.baidu.com</td>
 				<td>
-					<button class="btn btn-sm btn-outline-primary">删除</button>
+					<label><input type="checkbox" name="on"> 启用</label>
 				</td>
-			</tr>
-
-			<tr>
-				<td><input type="checkbox"></td>
-				<td>1234567890</td>
-				<td>******</td>
-				<td>¥10,000</td>
-				<td>2018-01-01</td>
-				<td><span class="success">已兑换</span></td>
-				<td>张三</td>
-				<td>2018-11-22</td>
 				<td>
-					<button class="btn btn-sm btn-outline-primary">删除</button>
-				</td>
-			</tr>
-
-			<tr>
-				<td><input type="checkbox"></td>
-				<td>1234567890</td>
-				<td>******</td>
-				<td>¥10,000</td>
-				<td>2018-01-01</td>
-				<td><span class="success">已兑换</span></td>
-				<td>张三</td>
-				<td>2018-11-22</td>
-				<td>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">编辑</button>
 					<button class="btn btn-sm btn-outline-primary">删除</button>
 				</td>
 			</tr>
@@ -242,52 +195,35 @@
 
 
 
-
-
 <!--UPPERLAYER-->
 <div id="fade" class="overlay-bg"></div>
 
 <div id="upperlayer" class="overlay-content">
 	<p>
-		<label for="couponNo">礼券编码 <span class="text-muted">(如：FHY201901BJ00001)</span></label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text">
-					FHY
-				</span>
-			</div>
-			<input type="text" class="form-control" id="search" placeholder="前缀1（发行年月）">
-			<input type="text" class="form-control" id="search" placeholder="前缀2（投放城市）">
-			<div class="input-group-append">
-				<span class="input-group-text">
-					xxxxx
-				</span>
-			</div>
-		</div>
-		
+		<label for="itemName">活动名称</label>
+		<input type="text" class="form-control" id="itemName" placeholder="" required>
 	</p>
 
 	<p>
-		<label for="couponPin">礼券数量</label>
-		<input type="text" class="form-control" id="couponPin" placeholder="" required>
+		<label for="itemPics">海报</label>
+		<input type="file" class="form-control" id="itemPics" placeholder="" required>
 	</p>
 
 	<p>
-		<label for="couponDollar">礼券金额</label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text">
-					¥
-				</span>
-			</div>
-			<input type="text" class="form-control" id="search" placeholder="10,000">
-		</div>
+		<label for="itemName">链接地址</label>
+		<input type="text" class="form-control" id="itemUrl" placeholder="" required>
 	</p>
 
-	<button class="btn btn-sm btn-primary">生成</button>
 
-	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">下载</button>
+	<p class="success"><label><input type="checkbox"> 启用</label></p>
+
+	
+
+	<button class="btn btn-sm btn-primary">确定</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
 </div>
+
 
 				<hr>
 <footer class="small gray">

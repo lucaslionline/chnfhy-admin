@@ -1,0 +1,102 @@
+---
+layout: default
+title: "活动管理"
+---
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>{{ page.title }}</h2>
+</div>
+
+
+<p>
+	<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text">
+				<span data-feather="search"></span>
+			</span>
+		</div>
+		<input type="text" class="form-control" id="search" placeholder="查询">
+	</div>
+</p>
+
+
+<p>
+	<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')")><span data-feather="plus-circle"></span> 新增</button>
+	<button class="btn btn-sm btn-outline-primary">删除</button>
+</p>
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th><input type="checkbox"></th>
+				<th>海报</th>
+				<th>活动名称</th>
+				<th>链接地址</th>
+				<th>状态</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td><img class="img-thumbnail item-thumbnail" src="{{ site.baseurl }}/assets/img/ad1.jpg"></td>
+				<td>圣诞促销</td>
+				<td>https://www.baidu.com</td>
+				<td>
+					<label><input type="checkbox" name="on"> 启用</label>
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">编辑</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox"></td>
+				<td><img class="img-thumbnail item-thumbnail" src="{{ site.baseurl }}/assets/img/ad2.jpg"></td>
+				<td>新年促销</td>
+				<td>https://www.baidu.com</td>
+				<td>
+					<label><input type="checkbox" name="on"> 启用</label>
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="ShowDiv('upperlayer','fade')">编辑</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+<!--UPPERLAYER-->
+<div id="fade" class="overlay-bg"></div>
+
+<div id="upperlayer" class="overlay-content">
+	<p>
+		<label for="itemName">活动名称</label>
+		<input type="text" class="form-control" id="itemName" placeholder="" required>
+	</p>
+
+	<p>
+		<label for="itemPics">海报</label>
+		<input type="file" class="form-control" id="itemPics" placeholder="" required>
+	</p>
+
+	<p>
+		<label for="itemName">链接地址</label>
+		<input type="text" class="form-control" id="itemUrl" placeholder="" required>
+	</p>
+
+
+	<p class="success"><label><input type="checkbox"> 启用</label></p>
+
+	
+
+	<button class="btn btn-sm btn-primary">确定</button>
+
+	<button class="btn btn-sm btn-outline-primary" onclick="CloseDiv('upperlayer','fade')">关闭</button>
+</div>
